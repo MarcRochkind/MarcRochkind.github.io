@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Home Page</title>
+<title>Another Page</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Patua+One&display=swap" rel="stylesheet">
@@ -184,7 +184,7 @@ function bodyloadedmasonry() {
 function bodyloaded() {
 	let m = document.getElementById("menu");
 	let ph = document.getElementById("page-header");
-	let mi =  document.getElementById("m-index");
+	let mi =  document.getElementById("m-page1");
 	if (m && ph && mi) {
 		let rect = ph.getBoundingClientRect();
 		m.style.maxHeight = (window.innerHeight - ph.offsetHeight - rect.top - 30) + 'px';
@@ -220,13 +220,23 @@ function bodyloaded() {
 
 </div>
 </td><td id=main-td >
-Prev&nbsp;&nbsp;&nbsp;&nbsp;<a href="page1.html">Next</a>
-<h1 id=title>Home Page</h1>
+<a href="index.html">Prev</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="page2.html">Next</a>
+<h1 id=title>Another Page</h1>
 
 <div id=main>
+<style>
+    #title {
+        display: none;
+    }
+</style>
 
-<img src="https://photos.smugmug.com/Portfolio-1/New-Photos/i-4rcpC2T/2/FNfndb7Kpc4QQs6D26sHsKhr2Nx88BPWjbTPVbrfG/S/MJR_20130604_0003-Edit-2-S.jpg" class="left"  style="max-width:150px;">
-<p>This photo was taken in the Chicago Loop in 2013 with a Panasonic DMC-G3 camera and a 30mm (60mm 35mm equivalent).</p></div></td></tr></table>
+<p>Rest of page</p>
+<h1>header1</h1>
+<div>
+
+# header2
+
+</div></div></td></tr></table>
 <hr id=footer-hr>
 <div id=page-footer>
 <p><em>Page Footer</em></p>
